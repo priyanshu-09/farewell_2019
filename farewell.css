@@ -64,8 +64,8 @@ body{
     .left-top-graphic{
         display:flex;
         flex-direction: column;
-        width:35vh;
-        height:35vh;
+        width:37vh;
+        height:37vh;
         margin:-15vh 0 0 -10vh;
         padding-top: 20vh;
         padding-left: 24vw;
