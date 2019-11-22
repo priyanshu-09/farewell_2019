@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" type="text/CSS" href="swing.css">
-    
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#020f30">
+    <title>Farewell 2020</title>
+    <link rel="stylesheet" href="animate.css">
+    <link href="swing.css" rel="stylesheet">
     <style>
         *{
             margin:0;
@@ -58,7 +61,7 @@
             display: flex;
             
         }
-        .place,.date{
+        .place,.date-day{
             flex-grow: 1;
             font-size: 3vw;
             padding-left: 1vw;
@@ -66,6 +69,11 @@
         }
         .place{
             border-left: 2px dotted black;
+            padding-top: 4vh;
+        }
+        .date-day{
+            display: flex;
+            flex-direction: column;
         }
         .left-top-graphic{
             display:flex;
@@ -123,56 +131,8 @@
             justify-content: center;
             align-items: center;
         }
-        .swing {
-            animation: swing ease-in-out 1s infinite alternate;
-            transform-origin: center -20px;
-            float:left;
-            box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-        }
-
-        .swing:after{
-            content: '';
-            position: absolute;  
-            width: 20px; height: 20px;  
-            border: 1px solid black;
-            top: -10.5px; left: 47%;
-            z-index: 0;
-            border-bottom: none;
-            border-right: none;
-            transform: rotate(45deg);
-        }
-        /* nail */
-        .swing:before{
-            content: '';
-            position: absolute;
-            width: 5px; height: 5px;
-            top: -14px;left: 49.5%;
-            z-index: 5;
-            border-radius: 50% 50%;
-            background: black;
-        }
-        
-        @keyframes swing {
-            0% { transform: rotate(3deg); }
-            100% { transform: rotate(-3deg); }
-        }
-        .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
-        }
-
-        @-webkit-keyframes fade {
-        from {opacity: .4} 
-        to {opacity: 1}
-        }
-
-        @keyframes fade {
-        from {opacity: .4} 
-        to {opacity: 1}
-        }
-
+       
+ 
     </style>
 
 </head>
@@ -184,8 +144,9 @@
                 <div class="farewell">2020</div>
             </div>
             <div class="place-date">
-                <div class="date">
-                    April 20
+                <div class="date-day">
+                    <div class="date">April 20</div>
+                    <div class="day">Saturday</div>
                 </div>
                 <div class="place">
                     Kamal's
@@ -201,8 +162,8 @@
             </div>
         </div>
         <div class="card swing">
-            <div class="image fade">1</div>
-            <div class="name-dep fade">
+            <div class="image zoomIn">1</div>
+            <div class="name-dep zoomIn">
                 <div class="name">
                     1st
                 </div>
@@ -212,8 +173,8 @@
             </div>
         </div>
         <div class="card swing">
-            <div class="image fade">2</div>
-            <div class="name-dep fade">
+            <div class="image zoomIn">2</div>
+            <div class="name-dep zoomIn">
                 <div class="name">
                     2nd
                 </div>
@@ -223,8 +184,8 @@
             </div>
         </div>
         <div class="card swing">
-            <div class="image fade">3</div>
-            <div class="name-dep fade">
+            <div class="image zoomIn">3</div>
+            <div class="name-dep zoomIn">
                 <div class="name">
                     3rd
                 </div>                  
@@ -268,3 +229,4 @@
             </script>
 
 </body>
+</html>
