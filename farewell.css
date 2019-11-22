@@ -68,7 +68,7 @@ body{
         height:35vh;
         margin:-15vh 0 0 -10vh;
         padding-top: 20vh;
-        padding-left: 14vh;
+        padding-left: 24vw;
     
     }
     .farewell{
@@ -132,7 +132,7 @@ body{
         top: 0;
         left: 0;
         
-        margin-top: 30vh;
+        margin-top: 28vh;
         
         justify-content: space-evenly;
     }
