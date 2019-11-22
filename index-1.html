@@ -23,12 +23,12 @@
 
         .left-box{
             flex-grow:2.4;
-            background-color: chartreuse;
+            background-color: lightgray;
         }
 
         .right-box{
             flex-grow:1;
-            background-color: cornflowerblue;
+            background-color: #6CC6CB;
         }
 
         .photo-booth{
@@ -37,9 +37,25 @@
             height:400px;
             margin-left: calc(70.588vw - 150px);
             margin-top:calc(-50vh - 200px);
-            background-color:darkgreen;
-            position: absolute;
+            background-color:white;
+            position: relative;
             z-index:50;
+        }
+
+        .circle{
+            border-radius:50%;
+            width:100px;
+            height:100px;
+            background-color: yellow;
+            position:absolute;
+        }
+
+        .left-top-graphic{
+            display:flex;
+            flex-direction: column;
+            width:35vw;
+            height:35vw;
+            margin:-15vw 0 0 -10vw;
         }
         
     </style>
@@ -47,7 +63,9 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="left-box"></div>
+        <div class="left-box">
+            <div class="circle left-top-graphic"></div>
+        </div>
         <div class="right-box"></div>
     </div>
     <div class="photo-booth"></div>
