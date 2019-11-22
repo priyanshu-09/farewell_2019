@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" type="text/CSS" href="swing.css">
+    
     <style>
         *{
             margin:0;
@@ -33,11 +35,11 @@
 
         .photo-booth{
             display: flex;
-            width:300px;
+            width:400px;
             height:400px;
-            margin-left: calc(70.588vw - 150px);
+            margin-left: calc(70.588vw - 200px);
             margin-top:calc(-50vh - 200px);
-            background-color:white;
+            background-color: transparent;
             position: relative;
             z-index:50;
         }
@@ -57,7 +59,82 @@
             height:35vw;
             margin:-15vw 0 0 -10vw;
         }
+        .card{
+            width: 300px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            background: blue;
+        }
+        .image{
+            height: 200px;
+            width: 260px;
+            background-color: chocolate;
+        }
+        .name-dep{
+            display: flex;
+            height: 160px;
+            width: 260px;
+            background-color: burlywood;
+        }
+
+        .left-arrow,.right-arrow{
+            height: 400px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swing {
+            animation: swing ease-in-out 1s infinite alternate;
+            transform-origin: center -20px;
+            float:left;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+        }
+
+        .swing:after{
+            content: '';
+            position: absolute;  
+            width: 20px; height: 20px;  
+            border: 1px solid black;
+            top: -10.5px; left: 47%;
+            z-index: 0;
+            border-bottom: none;
+            border-right: none;
+            transform: rotate(45deg);
+        }
+        /* nail */
+        .swing:before{
+            content: '';
+            position: absolute;
+            width: 5px; height: 5px;
+            top: -14px;left: 49.5%;
+            z-index: 5;
+            border-radius: 50% 50%;
+            background: black;
+        }
         
+        @keyframes swing {
+            0% { transform: rotate(3deg); }
+            100% { transform: rotate(-3deg); }
+        }
+        .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
+        @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
     </style>
 
 </head>
@@ -68,6 +145,77 @@
         </div>
         <div class="right-box"></div>
     </div>
-    <div class="photo-booth"></div>
+    <div class="photo-booth">
+        <div class="left-arrow">
+            <div>
+                <img src="caret-left-solid.svg" style="height: 34px; width: 24px; cursor: pointer;" onclick="plusSlides(-1)">
+            </div>
+        </div>
+        <div class="card swing">
+            <div class="image fade">1</div>
+            <div class="name-dep fade">
+                <div class="name">
+                    1st
+                </div>
+                <div class="dep">
+
+                </div>
+            </div>
+        </div>
+        <div class="card swing">
+            <div class="image fade">2</div>
+            <div class="name-dep fade">
+                <div class="name">
+                    2nd
+                </div>
+               <div class="dep">
+    
+                </div>
+            </div>
+        </div>
+        <div class="card swing">
+            <div class="image fade">3</div>
+            <div class="name-dep fade">
+                <div class="name">
+                    3rd
+                </div>                  
+                 <div class="dep">
+    
+                </div>
+            </div>
+        </div>
+
+        <div class="right-arrow">
+            <div>
+                <img src="caret-left-solid.svg" style="transform: rotate(180deg);cursor: pointer;height: 34px; width: 24px" onclick="plusSlides(1)">
+            </div>
+        </div>
+    </div>
+    <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("card");
+              //var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              
+              slides[slideIndex-1].style.display = "block";  
+              
+            }
+            </script>
 
 </body>
