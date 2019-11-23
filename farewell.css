@@ -206,8 +206,7 @@ body{
     .name-dep{
         display: flex;
         height: 15vh;
-        width: 60vw;
-        background-color: white;
+        width: 100%;
         flex-direction: column;
     }
     .name-dep>div{
@@ -218,10 +217,10 @@ body{
     .name{
         border-bottom: 2px solid #ACC0FE;
         padding-top:3vh;
-        font-size: 3.4vh;
         justify-content: end;
         height: auto;     
-        font-weight: 500;   
+        font-weight: 500;
+        width:100%;
     }
     .dep{
         /*padding-bottom: 6vh;*/
@@ -230,6 +229,7 @@ body{
         font-size: 10px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-style: italic;
+        width:100%;
     }
     .left-arrow,.right-arrow{
         height: 40vh;
