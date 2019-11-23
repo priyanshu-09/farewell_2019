@@ -115,6 +115,24 @@ body{
         background-color: yellow;
         position:absolute;
     }
+    .triangle1{
+        left: 70vw;
+        opacity: 0.5;
+
+    }
+    .triangle2{
+        opacity: 0.5;
+    }
+    .circle5{
+        display: block;
+        width:70vw;
+        height:70vw;
+        background-color: #92ECF1;
+        position: absolute;
+        right:-35vw;
+        bottom:-35vw;
+        opacity: 0.5;
+    }
     .place-date{
         position: fixed;
         bottom:6vh;
@@ -134,13 +152,15 @@ body{
         border-left: 2px dotted gray;
         display: flex;
         align-items: center;
-        background-color: aquamarine;
+    
         height: 100px;
     }
     .date-day{
         display: flex;
         flex-direction: column;
         text-align: right;
+        align-items: center;
+        justify-content: center;
     }
     .left-top-graphic{
         display:flex;
@@ -159,14 +179,14 @@ body{
     }
     .card{
         width:65vw;
-        height: 40vh;
+        height: 45vh;
         display: flex;
         flex-direction: column;
         padding: 2.5vw;
         background:white;
     }
     .image{
-        height: 20vh;
+        height: 25vh;
         width: 60vw;
         background-color: gray;
     }
@@ -184,13 +204,15 @@ body{
     }
     .name{
         border-bottom: 2px solid #ACC0FE;
-        padding-top:5vh;
-        font-size: 4vh;
+        padding-top:3vh;
+        font-size: 3.4vh;
+        justify-content: end;
+        height: auto;
         
     }
     .dep{
-        padding-bottom: 6vh;
-        font-size: 3vh;
+        /*padding-bottom: 6vh;*/
+        font-size: 2.5vh;
     }
     .left-arrow,.right-arrow{
         height: 40vh;
@@ -198,6 +220,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 2vw;
     }
     .left-box{
         flex-grow:1;
@@ -212,7 +235,8 @@ body{
         top: 0;
         left: 0;
         margin-top: 28vh;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        font-family: 'Roboto', sans-serif;
     }
 }
 
@@ -231,6 +255,7 @@ body{
         background-color: transparent;
         position: relative;
         z-index:50;
+        font-family: 'Roboto', sans-serif;
     }
     .left-box{
         flex-grow:2.4;
@@ -250,8 +275,11 @@ body{
         background-color: #6CC6CB;
         left: 45vw;
         top: 30vh;
+        opacity: 0.5;
     }
-
+    .triangle1,.triangle2{
+        opacity: 0.5;
+    }
     .circle2{
         width:100px;
         height:100px;
@@ -288,7 +316,9 @@ body{
         opacity: 0.6;
     }
 
-
+    .circle5{
+        display: none;
+    }
     .place-date{
         position: fixed;
         bottom:10vh;
@@ -338,7 +368,7 @@ body{
         background:white;
     }
     .image{
-        height: 200px;
+        height: 210px;
         width: 260px;
         background-color: gray;
     }
@@ -357,7 +387,7 @@ body{
     .name{
         border-bottom: 2px solid #ACC0FE;
         padding-top: 40px;
-        font-size: 40px;
+        font-size: 35px;
         
     }
     .dep{
