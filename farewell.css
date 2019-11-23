@@ -62,7 +62,7 @@ body{
     
     left:-3.5vw;
     bottom:-20vw;
-    opacity:0.5;
+    
     
 }
 
@@ -106,9 +106,7 @@ body{
     .right-box{
         display: none;
     }
-    #left-bottom-graphic img{
-        position:fixed;
-    }
+    
     .circle{
         border-radius:50%;
         width:100px;
@@ -131,7 +129,7 @@ body{
         width:70vw;
         height:70vw;
         background-color: #92ECF1;
-        position: fixed;
+        position: absolute;
         right:-35vw;
         bottom:-35vw;
         opacity: 0.5;
@@ -194,7 +192,7 @@ body{
     }
     .card{
         width:65vw;
-        height: 45vh;
+        height: 43vh;
         display: flex;
         flex-direction: column;
         padding: 2.5vw;
