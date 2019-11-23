@@ -341,7 +341,7 @@ body{
     .place-date{
         position: fixed;
         bottom:10vh;
-        left:6vw;
+        left:3vw;
         display: flex;
         font-family: 'Roboto', sans-serif;
 
