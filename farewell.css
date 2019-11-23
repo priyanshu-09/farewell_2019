@@ -10,8 +10,7 @@ body{
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .wrapper{
     width: 100%;
@@ -122,6 +121,7 @@ body{
     }
     .triangle2{
         opacity: 0.5;
+        top: 65vh;
     }
     .circle5{
         display: block;
