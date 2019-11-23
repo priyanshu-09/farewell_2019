@@ -62,7 +62,7 @@ body{
     
     left:-3.5vw;
     bottom:-20vw;
-    
+    opacity:0.7;
     
 }
 
@@ -74,7 +74,7 @@ body{
     border-right:40px solid #6CC6CB;
     border-left:40px solid transparent;
     position: absolute;
-    right: calc(28vw + 210px);
+    right: calc(27vw + 300px);
     top:77vh;
     transform:rotate(35deg) ;
 }
@@ -206,8 +206,7 @@ body{
     .name-dep{
         display: flex;
         height: 15vh;
-        width: 60vw;
-        background-color: white;
+        width: 100%;
         flex-direction: column;
     }
     .name-dep>div{
@@ -218,12 +217,10 @@ body{
     .name{
         border-bottom: 2px solid #ACC0FE;
         padding-top:3vh;
-        font-size: 3.4vh;
         justify-content: end;
-        height:auto;  
-        
-        padding-bottom:5px;
-            
+        height: auto;     
+        font-weight: 500;
+        width:100%;
     }
     .dep{
         /*padding-bottom: 6vh;*/
@@ -232,6 +229,7 @@ body{
         font-size: 10px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-style: italic;
+        width:100%;
     }
     .left-arrow,.right-arrow{
         height: 40vh;
@@ -268,10 +266,10 @@ body{
     }
     .photo-booth{
         display: flex;
-        width:450px;
-        height:400px;
-        margin-left: calc(70.588vw - 225px);
-        margin-top:calc(-50vh - 200px);
+        width:550px;
+        height:500px;
+        margin-left: calc(70.588vw - 275px);
+        margin-top:calc(-50vh - 250px);
         background-color: transparent;
         position: relative;
         z-index:50;
@@ -306,8 +304,8 @@ body{
         height:100px;
         background-color: #92ECF1;
         position: absolute;
-        right:calc(25vw - 130px);
-        top:calc(50vh - 240px)
+        right:calc(25vw - 190px);
+        top:calc(50vh - 293px)
     }
 
     .circle3{
@@ -343,7 +341,7 @@ body{
     .place-date{
         position: fixed;
         bottom:10vh;
-        left:6vw;
+        left:3vw;
         display: flex;
         font-family: 'Roboto', sans-serif;
 
@@ -381,22 +379,22 @@ body{
         line-height: 4vw;;
     }
     .card{
-        width: 300px;
-        height: 400px;
+        width: 400px;
+        height: 500px;
         display: flex;
         flex-direction: column;
         padding: 20px;
         background:white;
     }
     .image{
-        height: 210px;
-        width: 260px;
+        height: 277px;
+        width: 360px;
         background-color: gray;
     }
     .name-dep{
         display: flex;
-        height: 160px;
-        width: 260px;
+        height: 183px;
+        width: 360px;
         background-color: white;
         flex-direction: column;
     }
@@ -408,8 +406,8 @@ body{
     .name{
         border-bottom: 2px solid #ACC0FE;
         padding-top: 30px;
-        padding-bottom:5px;
         font-size: 35px;
+        font-weight: 500;
     }
     .dep{
         padding-bottom: 60px;
@@ -417,9 +415,11 @@ body{
         font-size: 20px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-style: italic;
+        color: black;
+        opacity:0.8;
     }
     .left-arrow,.right-arrow{
-        height: 400px;
+        height: 500px;
         width: 50px;
         display: flex;
         justify-content: center;

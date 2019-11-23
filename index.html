@@ -5,7 +5,8 @@
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>Farewell 2020</title>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:900|Roboto:500|Roboto:200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:900|Roboto:400,500,300&display=swap" rel="stylesheet">
+    <link href="segoeuii.ttf" rel="stylesheet">
     <link rel="stylesheet" href="animate.css">
     <link href="swing.css" rel="stylesheet">
     <link href="farewell.css" rel="stylesheet">
@@ -22,7 +23,7 @@
             <div class="circle6 circle"></div>
             <div id="left-bottom-graphic"><img src="left-bottom-graphic.svg"></div>
             <div class="circle left-top-graphic">
-                <div class="farewell" style="font-style: italic;">Farewell</div>
+                <div class="farewell">Farewell</div>
                 <div class="farewell year">2020</div>
             </div>
             <div class="place-date">
@@ -44,14 +45,14 @@
     <div class="photo-booth">
         <div class="left-arrow">
             <div>
-                <img src="caret-left-solid.svg" style="height: 34px; width: 24px; cursor: pointer;" onclick="plusSlides(-1)">
+                <img src="caret-left-solid.svg" style="height: 40px; width: 30px; cursor: pointer;" onclick="plusSlides(-1)">
             </div>
         </div>
         <div class="card swing">
             <div class="image zoomIn">
                 <img src="tushar-goel.jpg" style="height: 100%; width: 100%;">
             </div>
-            <div class="name-dep zoomIn">
+            <div class="name-dep fadeIn">
                 <div class="name fittext">
                     Tushar Goel
                 </div>
@@ -61,10 +62,10 @@
             </div>
         </div>
         <div class="card swing">
-            <div class="image zoomIn">
+            <div class="image fadeIn">
                 <img src="madhur-wadhwa.jpg" style="height: 100%; width: 100%;">
             </div>
-            <div class="name-dep zoomIn">
+            <div class="name-dep fadeIn">
                 <div class="name fittext">
                     Madhur Wadhwa
                 </div>
@@ -74,10 +75,10 @@
             </div>
         </div>
         <div class="card swing">
-            <div class="image zoomIn">
+            <div class="image fadeIn">
                 <img src="chinmay_pandhare1.jpg" style="height: 100%; width: 100%;">
             </div>
-            <div class="name-dep zoomIn">
+            <div class="name-dep fadeIn">
                 <div class="name fittext">
                     Chinmay Pandhare
                 </div>                  
@@ -87,10 +88,10 @@
             </div>
         </div>
         <div class="card swing">
-            <div class="image zoomIn">
+            <div class="image fadeIn">
                 <img src="vaibhav_maheshwari.jpg" style="height: 100%; width: 100%;">
             </div>
-            <div class="name-dep zoomIn">
+            <div class="name-dep fadeIn">
                 <div class="name fittext">
                     Vaibhav Maheshwari
                 </div>
@@ -100,10 +101,10 @@
             </div>
         </div>
         <div class="card swing">
-            <div class="image zoomIn">
+            <div class="image fadeIn">
                 <img src="navjot_bansal.jpg" style="height: 100%; width: 100%;">
             </div>
-            <div class="name-dep zoomIn">
+            <div class="name-dep fadeIn">
                 <div class="name fittext">
                     Navjot Bansal
                 </div>
@@ -113,10 +114,10 @@
             </div>
         </div>
         <div class="card swing">
-            <div class="image zoomIn">
+            <div class="image fadeIn">
                 <img src="nilay_arora.jpg" style="height: 100%; width: 100%;">
             </div>
-            <div class="name-dep zoomIn">
+            <div class="name-dep fadeIn">
                 <div class="name fittext">
                     Nilay Arora
                 </div>                  
@@ -126,10 +127,10 @@
             </div>
         </div>
         <div class="card swing">
-                <div class="image zoomIn">
+                <div class="image fadeIn">
                     <img src="aditya_laddha.jpg" style="height: 100%; width: 100%;">
                 </div>
-                <div class="name-dep zoomIn">
+                <div class="name-dep fadeIn">
                     <div class="name fittext">
                         Aditya Laddha
                     </div>                  
@@ -141,7 +142,7 @@
 
         <div class="right-arrow">
             <div>
-                <img src="caret-left-solid.svg" style="transform: rotate(180deg);cursor: pointer;height: 34px; width: 24px" onclick="plusSlides(1)">
+                <img src="caret-left-solid.svg" style="transform: rotate(180deg);cursor: pointer;height: 40px; width: 30px" onclick="plusSlides(1)">
             </div>
         </div>
     </div>
@@ -168,7 +169,8 @@
               if (n > slides.length) {slideIndex = 1}    
               if (n < 1) {slideIndex = slides.length}
               for (i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";  
+                  slides[i].style.display = "none";
+
               }
               
               slides[slideIndex-1].style.display = "block";  
