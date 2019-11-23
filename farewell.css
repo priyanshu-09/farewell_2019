@@ -49,7 +49,6 @@ body{
 #left-bottom-graphic{
     width:40vw;
     height:auto;
-    background-color:;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -140,6 +139,7 @@ body{
         right: 2vw;
         display: flex;
         font-family: 'Roboto', sans-serif;
+        font-weight: 200;
 
     }
     .place,.date-day{
@@ -207,8 +207,7 @@ body{
         padding-top:3vh;
         font-size: 3.4vh;
         justify-content: end;
-        height: auto;
-        
+        height: auto;        
     }
     .dep{
         /*padding-bottom: 6vh;*/
@@ -221,6 +220,7 @@ body{
         justify-content: center;
         align-items: center;
         margin: 2vw;
+        
     }
     .left-box{
         flex-grow:1;
@@ -386,13 +386,16 @@ body{
     }
     .name{
         border-bottom: 2px solid #ACC0FE;
-        padding-top: 40px;
+        padding-top: 30px;
+        padding-bottom:5px;
         font-size: 35px;
-        
     }
     .dep{
         padding-bottom: 60px;
+        padding-top:5px;
         font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
     }
     .left-arrow,.right-arrow{
         height: 400px;
