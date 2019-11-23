@@ -62,7 +62,7 @@ body{
     opacity: 0.4;
     left:-3.5vw;
     bottom:-20vw;
-    opacity:1;
+    opacity:0.7;
     
 }
 
@@ -207,7 +207,8 @@ body{
         padding-top:3vh;
         font-size: 3.4vh;
         justify-content: end;
-        height: auto;        
+        height: auto;     
+        font-weight: 500;   
     }
     .dep{
         /*padding-bottom: 6vh;*/
@@ -389,6 +390,7 @@ body{
         padding-top: 30px;
         padding-bottom:5px;
         font-size: 35px;
+        font-weight: 500;
     }
     .dep{
         padding-bottom: 60px;
@@ -396,6 +398,8 @@ body{
         font-size: 20px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-style: italic;
+        color: black;
+        opacity:0.8;
     }
     .left-arrow,.right-arrow{
         height: 400px;
