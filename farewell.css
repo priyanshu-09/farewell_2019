@@ -74,7 +74,7 @@ body{
     border-right:40px solid #6CC6CB;
     border-left:40px solid transparent;
     position: absolute;
-    right: calc(28vw + 210px);
+    right: calc(27vw + 300px);
     top:77vh;
     transform:rotate(35deg) ;
 }
@@ -266,10 +266,10 @@ body{
     }
     .photo-booth{
         display: flex;
-        width:450px;
-        height:400px;
-        margin-left: calc(70.588vw - 225px);
-        margin-top:calc(-50vh - 200px);
+        width:550px;
+        height:500px;
+        margin-left: calc(70.588vw - 275px);
+        margin-top:calc(-50vh - 250px);
         background-color: transparent;
         position: relative;
         z-index:50;
@@ -304,8 +304,8 @@ body{
         height:100px;
         background-color: #92ECF1;
         position: absolute;
-        right:calc(25vw - 130px);
-        top:calc(50vh - 240px)
+        right:calc(25vw - 190px);
+        top:calc(50vh - 293px)
     }
 
     .circle3{
@@ -379,22 +379,22 @@ body{
         line-height: 4vw;;
     }
     .card{
-        width: 300px;
-        height: 400px;
+        width: 400px;
+        height: 500px;
         display: flex;
         flex-direction: column;
         padding: 20px;
         background:white;
     }
     .image{
-        height: 210px;
-        width: 260px;
+        height: 277px;
+        width: 360px;
         background-color: gray;
     }
     .name-dep{
         display: flex;
-        height: 160px;
-        width: 260px;
+        height: 183px;
+        width: 360px;
         background-color: white;
         flex-direction: column;
     }
@@ -420,7 +420,7 @@ body{
         opacity:0.8;
     }
     .left-arrow,.right-arrow{
-        height: 400px;
+        height: 500px;
         width: 50px;
         display: flex;
         justify-content: center;
