@@ -8,6 +8,7 @@ body{
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
+    overflow-y: hidden;
 }
 .wrapper{
     width: 100%;
@@ -19,11 +20,85 @@ body{
 }
 
 
+/*.small-yellow-rectangle{
+    width:10vw;
+    height:30vw;
+    transform: rotate(35deg);
+    background-color: beige;
+    z-index: 999;
+    position: absolute;
+    bottom: -10vw;
+    left: 3.3vw;
+    opacity: 0.4;
+}
+
+.big-lightblue-rectangle{
+    width:30vw;
+    height:300px;
+    transform: rotate(35deg);
+    background-color: chocolate;
+    z-index: 999;
+    position: absolute;
+    bottom: -20VW;
+    left: 13vw;
+    opacity: 0.4;
+}*/
+
+#left-bottom-graphic{
+    width:40vw;
+    height:auto;
+    background-color:;
+    z-index: 999;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.4;
+}
+
+#left-bottom-graphic img{
+    width:40vw;
+    height:100%;
+    position: relative;
+    opacity: 0.4;
+    left:-3.5vw;
+    bottom:-20vw;
+    opacity:1;
+    
+}
+
+.triangle2{
+    width:0;
+    height:0;
+    border-top:20px solid transparent;
+    border-bottom:20px solid transparent;
+    border-right:40px solid #6CC6CB;
+    border-left:40px solid transparent;
+    position: absolute;
+    right: calc(28vw + 210px);
+    top:77vh;
+    transform:rotate(30deg) ;
+}
+
+.triangle1{
+    width:0;
+    height:0;
+    border-top:13px solid transparent;
+    border-bottom:13px solid transparent;
+    border-right:26px solid #6CC6CB;
+    border-left:26px solid transparent;
+    position: absolute;
+    left: 35vw;
+    top:10vh;
+    transform:rotate(90deg) ;
+}
 
 
 
 
-
+/*-------------------------------------------------------------------------
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
 
 
 
@@ -54,7 +129,10 @@ body{
     }
     .place{
         border-left: 2px dotted black;
-        padding-top: 1vh;
+        display: flex;
+        align-items: center;
+        background-color: aquamarine;
+        height: 100px;
     }
     .date-day{
         display: flex;
@@ -119,21 +197,17 @@ body{
     }
     .left-box{
         flex-grow:1;
-        background-color: lightgray;
+        background-color: white;
     }
     .photo-booth{
         display: flex;
         width:100vw;
-        height:40vh;
-        
-        
+        height:40vh;    
         background-color: transparent;
         position: absolute;
         top: 0;
         left: 0;
-        
         margin-top: 28vh;
-        
         justify-content: space-evenly;
     }
 }
@@ -156,7 +230,7 @@ body{
     }
     .left-box{
         flex-grow:2.4;
-        background-color: lightgray;
+        background-color: white;
     }
     .circle{
         border-radius:50%;
@@ -165,6 +239,15 @@ body{
         background-color: yellow;
         position:absolute;
     }
+
+    .circle1 {
+        width: 52px;
+        height: 52px;
+        background-color: #6CC6CB;
+        left: 45vw;
+        top: 30vh;
+    }
+
     .place-date{
         position: fixed;
         bottom:10vh;
@@ -180,7 +263,8 @@ body{
     }
     .place{
         border-left: 2px dotted black;
-        padding-top: 4vh;
+        display: flex;
+        align-items: center;
     }
     .date-day{
         display: flex;
