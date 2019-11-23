@@ -248,13 +248,14 @@ body{
     }
     .photo-booth{
         display: flex;
-        width:400px;
+        width:450px;
         height:400px;
-        margin-left: calc(70.588vw - 200px);
+        margin-left: calc(70.588vw - 225px);
         margin-top:calc(-50vh - 200px);
         background-color: transparent;
         position: relative;
         z-index:50;
+        justify-content: space-between;
         font-family: 'Roboto', sans-serif;
     }
     .left-box{
