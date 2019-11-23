@@ -11,7 +11,7 @@ body{
     height: 100vh;
     box-sizing: border-box;
     overflow-y: hidden;
-    
+    overflow-x: hidden;
 }
 .wrapper{
     width: 100%;
@@ -51,11 +51,10 @@ body{
     width:40vw;
     height:auto;
     background-color:;
-    z-index: 999;
     position: absolute;
     bottom: 0;
     left: 0;
-    opacity: 0.4;
+    opacity: 1;
 }
 
 #left-bottom-graphic img{
@@ -122,7 +121,8 @@ body{
         left:2vw;
         right: 2vw;
         display: flex;
-        
+        font-family: 'Roboto', sans-serif;
+
     }
     .place,.date-day{
         flex-grow: 1;
@@ -131,7 +131,7 @@ body{
         padding-right: 2vw;
     }
     .place{
-        border-left: 2px dotted black;
+        border-left: 2px dotted gray;
         display: flex;
         align-items: center;
         background-color: aquamarine;
@@ -168,7 +168,7 @@ body{
     .image{
         height: 20vh;
         width: 60vw;
-        background-color: chocolate;
+        background-color: gray;
     }
     .name-dep{
         display: flex;
@@ -183,7 +183,7 @@ body{
         margin-right: 25vw;
     }
     .name{
-        border-bottom: 2px dotted black;
+        border-bottom: 2px solid #ACC0FE;
         padding-top:5vh;
         font-size: 4vh;
         
@@ -294,6 +294,8 @@ body{
         bottom:10vh;
         left:6vw;
         display: flex;
+        font-family: 'Roboto', sans-serif;
+
         
     }
     .place,.date-day{
@@ -303,7 +305,7 @@ body{
         padding-right: 1vw;
     }
     .place{
-        border-left: 2px dotted black;
+        border-left: 2px dotted gray;
         display: flex;
         align-items: center;
     }
@@ -317,14 +319,15 @@ body{
         width:35vw;
         height:35vw;
         margin:-15vw 0 0 -10vw;
-        padding-top: 20vw;
-        padding-left: 15vw;
+        padding-top: 19vw;
+        padding-left: 13vw;
     
     }
     .farewell{
         font-size: 4vw;
         font-weight: bold;
         font-family: 'Noto Sans JP', sans-serif;
+        line-height: 4vw;;
     }
     .card{
         width: 300px;
@@ -337,7 +340,7 @@ body{
     .image{
         height: 200px;
         width: 260px;
-        background-color: chocolate;
+        background-color: gray;
     }
     .name-dep{
         display: flex;
@@ -352,7 +355,7 @@ body{
         margin-right: 60px;
     }
     .name{
-        border-bottom: 2px dotted black;
+        border-bottom: 2px solid #ACC0FE;
         padding-top: 40px;
         font-size: 40px;
         
